@@ -1,0 +1,28 @@
+.vertical-fullsize {
+    height: 100vh;
+}
+
+.horizontal-fullsize {
+    width: 100%;
+}
+
+.msg-container {
+    position: fixed;
+}
+
+.text-input-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.message {
+    border: 1px solid grey;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
