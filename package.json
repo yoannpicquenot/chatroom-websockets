@@ -1,0 +1,22 @@
+{
+  "name": "chatroom-websockets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapy69003/chatroom-websockets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mapy69003/chatroom-websockets/issues"
+  },
+  "homepage": "https://github.com/mapy69003/chatroom-websockets#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
