@@ -14,8 +14,12 @@ app.get('/', function (req, res) {
 });
 
 io.on('connection', function (socket) {
-  socket.emit('news', { hello: 'world' });
-  socket.on('my other event', function (data) {
-    console.log(data);
+  console.log('Nouvel utilisateur connecté');
+  socket.on('disconnect', function (data) {
+    console.log('Un utilisateur s\'est déconnecté');
+  });
+
+  socket.on('message', function(message) {
+    //io.emit('message', message);
   });
 });
