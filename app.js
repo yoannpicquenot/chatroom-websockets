@@ -20,13 +20,7 @@ app.get('/*', function(req, res) {
 io.on('connection', function(socket) {
     socket.on('connected', function(message) {
         var toEmit = '<i>' + message.username + " s'est connecte</i>";
-        io.emit('message', toEmit);
-    });
-
-    socket.on('disconnect', function(data) {
-        //var toEmit = '<i>Un utilisateur s\'est déconnecté</i>';
-        //io.emit('message', toEmit);
-        console.log('Un utilisateur s\'est déconnecté');
+        io.emit('userconnection', toEmit);
     });
 
     socket.on('message', function(message) {
@@ -37,5 +31,9 @@ io.on('connection', function(socket) {
     socket.on('change username', function(username) {
         //var toEmit = '<i>"' + username.old + '" a changé son nom en "' + username.new + '"</i>';
         //io.emit('message', toEmit);
+    });
+
+    socket.on('userdisconnection', function(username) {
+        io.emit('userdisconnected', `<i>${username} s'est deconnecte</i>`);
     });
 });

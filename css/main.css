@@ -8,21 +8,25 @@
 
 .msg-container {
     position: fixed;
+    border: 1px solid black;
+    height: 90vh;
+    width: 100%;
+    overflow-y: scroll;
 }
 
 .text-input-container {
+    padding: 20px;
     position: fixed;
     bottom: 0;
     width: 100%;
+    border: 1px solid black;
+    height: 10vh;
 }
 
 .message {
-    border: 1px solid grey;
-    border-radius: 30px;
     padding: 10px;
+    width: auto;
 }
 
 main {
-    margin-left: 20px;
-    margin-right: 20px;
 }
