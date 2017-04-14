@@ -18,6 +18,7 @@
   "homepage": "https://github.com/mapy69003/chatroom-websockets#readme",
   "dependencies": {
     "express": "^4.15.2",
+    "materialize-css": "^0.98.1",
     "socket.io": "^1.7.3"
   }
 }

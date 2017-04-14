@@ -1,0 +1,32 @@
+.vertical-fullsize {
+    height: 100vh;
+}
+
+.horizontal-fullsize {
+    width: 100%;
+}
+
+.msg-container {
+    position: fixed;
+    border: 1px solid black;
+    height: 90vh;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.text-input-container {
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid black;
+    height: 10vh;
+}
+
+.message {
+    padding: 10px;
+    width: auto;
+}
+
+main {
+}
